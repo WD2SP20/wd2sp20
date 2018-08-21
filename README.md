@@ -1,4 +1,4 @@
-# CSCI 32 - Fall 2017 #
+# CSCI 32 #
 
 ### Exercise 2 ###
 
