@@ -13,10 +13,13 @@
     *  cd ~/workspace
     *  git branch -a
 + To checkout a particular branch run the following:
-    *  git checkout -b BRANCHNAME class/BRANCHNAME (where BRANCHNAME is the name after the remotes/class/)
+    *  git checkout BRANCHNAME
 + To get back to the master branch:
     *  cd ~/workspace
     *  git checkout master
++ To setup the SQL Guitar Shop Database (Make sure you're on the master branch)
+	* cd ~/workspace
+	* mysql -u root < sql/create_db.sql
 
 ### How to get new files into the repository if you already have created it ###
 
