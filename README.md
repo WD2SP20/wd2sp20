@@ -1,4 +1,4 @@
-# CSCI 32 - Fall 2018 #
+# CSCI 32 - Spring 2020 #
 
 ### What is this repository for? ###
 
