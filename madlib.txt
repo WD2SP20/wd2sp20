@@ -1,0 +1,28 @@
+const madlib1 = exports.madlib1 = {
+  number: {label: 'A Number', val: ''},
+  typeOfGame: {label: 'A Type of Game', val: ''},
+  adj1: {label: 'Adjective #1', val: ''},
+  adj2: {label: 'Adjective #2', val: ''},
+  adj3: {label: 'Adjective #3', val: ''},
+  adj4: {label: 'Adjective #4', val: ''},
+  adj5: {label: 'Adjective #5', val: ''},
+  noun1: {label: 'Noun #1', val: ''},
+  noun2: {label: 'Noun #2', val: ''},
+  pluralNoun1: {label: 'Plural Noun #1', val: ''},
+  pluralNoun2: {label: 'Plural Noun #2', val: ''},
+  typeofLiquid1: {label: 'Type of Liquid #1', val: ''},
+  typeofLiquid2: {label: 'Type of Liquid #2', val: ''},
+  get story(){ return `Spring vacation usually falls around Easter time. The schools are
+closed and all the ${this.pluralNoun1.val} get ${this.number.val} weeks off.
+The ${this.adj1.val} teachers also get a vacation. There are lots of
+things to do during Easter vacation. Some kids loaf around and
+watch the ${this.noun1.val}. Others get outside and play ${this.typeOfGame.val},
+while more ambitious students spend their time studying
+their ${this.adj2.val} books so they will grow up to become
+${this.pluralNoun2.val}. Little kids also color ${this.adj3.val} eggs.
+Here's how you color an egg: first, mix a package of ${this.adj4.val}
+dye in a bowl full of ${this.typeofLiquid1.val}. Then, dip a(n) ${this.noun2.val}
+in the bowl and rinse it off with ${this.typeofLiquid2.val}. Then, after
+it dries, you can paint it with a brush. Then you show it to your
+friends, who will say, "Boy what a ${this.adj5.val} egg!"`},
+};
