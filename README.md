@@ -1,4 +1,4 @@
-# CSCI 32 - Fall 2018 #
+# CSCI 32 #
 
 ### This repo holds the starter for how to connect sequelize, express, mysql and node ###
 
@@ -12,5 +12,4 @@
 + ./node_modules/.bin/express --view=ejs --git
 + npm install
 + mkdir models
-+ phpmyadmin-ctl install
 
