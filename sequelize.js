@@ -5,8 +5,8 @@ const productsModel = require('./models/products');
 const sequelize = new Sequelize({
   host: 'localhost',
   database: 'guitar_shop',
-  username: 'root',
-  password: null,
+  username: 'csci32',
+  password: 'csci32',
   dialect: 'mysql',
   // A pool is good for multiple connections
   pool: {
