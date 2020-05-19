@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <% include includes/headerStuff %>
+</head>
+<body>
+  <% include includes/pageHeader %>
+  <!-- Main Content Goes Here -->
+  <main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <% if(flashMessage && flashMessage.length > 0) { %>
+            <div class="alert <%=flashType%> alert-dismissible fade show" role="alert">
+              <%=flashMessage%>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          <% } %>
+          <h1 class="display-3">Guitar Shop</h1>
+          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">View Products &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <% for(let product of products) { %>
+            <div class="col-md-6 col-lg-4">
+              <h2><%=product.productName.substring(0, 20)%></h2>
+              <img class="img-fluid mr-2 img-thumbnail rounded float-left" src="/images/<%=product.categoryName%>.png" alt="<%=product.categoryName%>">
+              <p><%=product.description.substring(0, 125)%> ... <a href="/products/view/<%=product.productID%>">More &raquo;</a></p>
+            </div>
+          <% } %>
+          
+    
+    
+    
+          
+
+        <hr>
+
+      </div> <!-- /container -->
+  </main>
+<% include includes/pageFooter %>
+<% include includes/footerStuff %>
+</body>
+</html>
